@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background: #f7f7f7;
+  display: grid;
+  gap: 3.75rem;
+  justify-items: center;
+  margin-top: 3.75rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  background: #ffffff;
+  padding: 0.93rem 1.87rem;
+  color: black;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+}
+.menu a:hover {
+  border-color: #e21;
+}
+.ver:hover {
+  background: #900;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+
+.introducao {
+  background: #fff;
+  padding: 2.5rem;
+  text-align: right;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+}
+.introducao::before {
+  content: "";
+  width: 3.75rem; /* 60px */
+  height: 0.25rem; /* 4px */
+  top: 1.87rem; /* 30px */
+  right: -1.87rem; /* -30px */
+  background: #e21;
+  position: absolute;
+}
+
+.intro-cover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.ver {
+  background: #e21;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.subtitulo {
+  font-size: 4rem;
+  text-align: right;
+  background-image: url("../img/onda.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px;
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+  color: #c6c6c6;
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+.vantagens {
+  padding: 40px;
+  background: #ffffff;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-item:hover {
+  border-left-color: #e21;
+}
+.vantagens-item:nth-child(odd) {
+  background: #f7f7f7;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+@media (max-width: 1000px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+}
