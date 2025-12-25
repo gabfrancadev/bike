@@ -24,7 +24,7 @@ This project is not related to the final Bikcraft project and uses a separate co
 - Organizing a small front-end project
 
 ## Live Preview
-gabfrancadev.github.io/bike/
+https://gabfrancadev.github.io/bike/
 
 ## Image Credits
 Images used in this project belong to Origamid and are used strictly for educational purposes.
